@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About In Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Weather App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About This App</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Most Seen Places
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" id="mumbai">Mumbai</button></li>
+                            <li><button class="dropdown-item" id="delhi">Delhi</button></li>
+                            <li><button class="dropdown-item" id="jaipur">Jaipur</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="cityname" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="searchbtn" class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bd-main order-1 mx-4 my-2">
+        <div class="bd-intro pt-2 ps-lg-2">
+            <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                <div class="mb-3 mb-md-0 d-flex text-nowrap"><a class="btn btn-sm btn-bd-light rounded-2"
+                        href="https://github.com/shubhamjaiswar43/Weather-App" title="View and edit this file on GitHub"
+                        target="_blank" rel="noopener">
+                        View on GitHub
+                    </a>
+                </div>
+                <h1 class="bd-title mb-0" id="content">About</h1>
+            </div>
+            <p class="fs-2 mx-4 mb-0">
+                It is Web Application Created For Weather Information Of Almost All Places.
+            </p>
+            <p class="fs-2 mx-4 mb-0">
+                In This Weather App, You Will Get To Know Information :
+            <ul class="fs-4 mx-4 py-0">
+                <li>Temperature : Current Temperature Of That Place</li>
+                <li>Cloud_PCT : Current Cloud Percent Of That Place</li>
+                <li>Wind_Speed : Current Wind Speed Of That Place</li>
+                <li>Wind_Degree : Current Wind Degree Of That Place</li>
+                <li>Humidity : Current Humidity Of That Place</li>
+                <li>Sunrise Time : Sunrise Time Of That Place For That Day</li>
+                <li>Sunset Time : Sunset Time Of That Place For That Day</li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="bd-intro pt-2 ps-lg-2">
+            <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                <div class="mb-3 mb-md-0 d-flex text-nowrap"><a class="btn btn-sm btn-bd-light rounded-2"
+                        href="https://github.com/shubhamjaiswar43" title="View and edit this file on GitHub"
+                        target="_blank" rel="noopener">
+                        View on GitHub
+                    </a>
+                </div>
+                <h1 class="bd-title mb-0" id="content">Created By</h1>
+            </div>
+            <p class="fs-2 mx-4 mb-0">
+                Shubham Jaiswar
+            </p>
+        </div>
+
+        <div class="bd-intro pt-2 ps-lg-2 my-4">
+            <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                <div style="visibility: hidden;" class="mb-3 mb-md-0 d-flex text-nowrap"><a class="btn btn-sm btn-bd-light rounded-2"
+                        href="https://github.com/shubhamjaiswar43" title="View and edit this file on GitHub"
+                        target="_blank" rel="noopener">
+                        View on GitHub
+                    </a>
+                </div>
+                <h1 class="bd-title mb-0" id="content">Tech-Stacks Used</h1>
+            </div>
+            <p class="fs-2 mx-4 mb-0">
+                <img style="height: 40px; width: 40px;" src="img/html.png" alt=""> - HTML 
+            </p>
+            <p class="fs-2 mx-4 mb-0">
+                <img style="height: 40px; width: 40px;" src="img/bootstrap.png" alt=""> - Bootstrap 
+            </p>
+            <p class="fs-2 mx-4 mb-0">
+                <img style="height: 40px; width: 40px;" src="img/javascript.png" alt=""> - Javascript 
+            </p>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+</body>
+
+</html>
