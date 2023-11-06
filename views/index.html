@@ -6,10 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #navbar{
+            position:sticky;
+            top:0;
+            left:0;
+            right:0;
+            z-index: 1;
+            background-image: linear-gradient(to right,skyblue,lightblue,white,lightblue);
+        }
+        #navbar *{
+            background: none ;
+        }
+        body{
+            background: url("https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-2381.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699228800&semt=ais");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #otherplaces{
+            background-image: linear-gradient(to bottom right,skyblue,lightblue,white);
+        }
+        #otherplaces *{
+            background: none;
+        }
+        #cityname{
+            border:2px solid black;
+        }
+        #searchbtn{
+            border:2px solid black;
+        }
+        #searchbtn:hover{
+            color:black;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Weather App</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,7 +73,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input id="cityname" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button id="searchbtn" class="btn btn-outline-success" type="submit">Search</button>
+                    <button id="searchbtn" class="btn btn-outline-secondary" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -96,42 +130,24 @@
 
         <h2 class="display-6 text-center mb-4 fw-bolder">Weather Of Other Common Places</h2>
 
-        <div class="table-responsive">
+        <div id="otherplaces" class="table-responsive">
             <table class="table text-center">
                 <thead>
                     <tr>
                         <th style="width: 34%;"></th>
-                        <th style="width: 100px">Temperature</th>
-                        <th style="width: 100px">feels_like</th>
-                        <th style="width: 100px">min_temp</th>
-                        <th style="width: 100px">max_temp</th>
-                        <th style="width: 100px">Cloud_pct</th>
-                        <th style="width: 100px">wind_speed</th>
-                        <th style="width: 100px">wind_degrees</th>
-                        <th style="width: 100px">humidity</th>
-                        <th style="width: 100px">sunrise</th>
-                        <th style="width: 100px">sunset</th>
+                        <th style="width: 100px">Temperature(&deg;C)</th>
+                        <th style="width: 100px">feels_like(&deg;C)</th>
+                        <th style="width: 100px">min_temp(&deg;C)</th>
+                        <th style="width: 100px">max_temp(&deg;C)</th>
+                        <th style="width: 100px">Cloud_pct(%)</th>
+                        <th style="width: 100px">wind_speed(km/hr)</th>
+                        <th style="width: 100px">wind_degrees(&deg;C)</th>
+                        <th style="width: 100px">humidity(%)</th>
+                        <th style="width: 100px">sunrise(today)</th>
+                        <th style="width: 100px">sunset(today)</th>
                     </tr>
                 </thead>
                 <tbody id="commonplaces">
-                    <tr>
-                        <th scope="row" class="text-start">Lucknow</th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-start">Banglore</th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-start">Pune</th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-start">Kolkatta</th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-start">Chennai</th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-start">Ahmedabad</th>
-                    </tr>
                 </tbody>
             </table>
         </div>
